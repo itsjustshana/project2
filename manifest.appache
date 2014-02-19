@@ -1,0 +1,12 @@
+CACHE MANIFEST
+manifest.appcache
+static/calc.js
+static/calc.css
+ststic/smallheart.gif
+
+
+
+FALLBACK:
+
+NETWORK:
+*
