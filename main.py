@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello():
+def game(name=None):
     """Return a friendly HTTP greeting."""
-    return 'Hello World!'
+    return render_template('cards.html', name=name)
 
 
 @app.errorhandler(404)
@@ -30,4 +30,15 @@ def me(name=None):
 def calc(name=None):
   """ Return me template at application /calc URL."""
   return render_template('calc.html', name=name)
+
+@app.route('/catwalk')
+def catwalk(name=None):
+  """ Return me template at application /calc URL."""
+  return render_template('catwalk.html', name=name)
+
+
+@app.route('/card')
+def card(name=None):
+  """ Return me template at application /calc URL."""
+  return render_template('cards.html', name=name)
 
